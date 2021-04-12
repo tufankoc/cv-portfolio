@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Open+Sans:wght@300&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #F1FAEE;
+  color: #457B9D;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 114rem;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #A8DADC;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  border-bottom: 1px solid #E63946;
+  background-color: #1D3557;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .header-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .header-navbar .navbar-logo h1 {
+  color: #E63946;
+  font-family: "Changa", sans-serif;
+  font-size: 3rem;
+}
+header .container .header-navbar .navbar-list {
+  display: flex;
+  padding: 3rem;
+}
+header .container .header-navbar .navbar-list li a {
+  font-size: 1.3rem;
+  padding: 0.2rem;
+  margin-right: 2rem;
+  transition: all 0.5s;
+}
+header .container .header-navbar .navbar-list li a:hover {
+  color: #E63946;
+  border-bottom: 1px solid #E63946;
+}
+header .container .header-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .header-login .navbar-login a {
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  margin-left: 1rem;
+}
+header .container .header-login .navbar-contact {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-left: 3rem;
+  background-color: #E63946;
+  border-radius: 10px;
+  color: #1D3557;
+  font-style: initial;
+}
+
+main .container .main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding-left: 4rem;
+  margin-top: 10rem;
+}
+main .container .main-content {
+  text-align: left;
+  padding-right: 2rem;
+}
+main .container .main-content h2 {
+  font-size: 4rem;
+}
+main .container .main-content p {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-left: 2.3rem;
+}
+main .container .main-content .buton button {
+  border: none;
+  color: #A8DADC;
+  background-color: #E63946;
+  font-size: 1rem;
+  font-family: "Changa", sans-serif;
+  letter-spacing: 0.2rem;
+  margin: 5rem;
+  padding: 2rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  margin-top: 7rem;
+  border-radius: 10px;
+}
+main .container .main-photo img {
+  border-radius: 10%;
+  max-width: 50rem;
+  right: 0px;
+}
+main .container .sponsor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  position: relative;
+}
+main .container .sponsor img {
+  width: 90%;
+}
+main .container .sponsor h4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #E63946;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #1D3557;
+  width: 10rem;
+}/*# sourceMappingURL=main.css.map */

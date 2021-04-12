@@ -1,0 +1,17 @@
+$primary-color:#1D3557;
+$secondary-color:#E63946;
+$background-color:#F1FAEE;
+$text-color:#457B9D;
+$link-color:#A8DADC;
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Open+Sans:wght@300&display=swap');
+$primary-font: 'Changa',
+sans-serif;
+$secondary-font: 'Open Sans',
+sans-serif;
+@mixin flex-display($display,
+$align-items,
+$justify-content) {
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}

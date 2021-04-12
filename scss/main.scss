@@ -1,0 +1,159 @@
+@import 'abstracts';
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $secondary-font;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 114rem;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $link-color;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    border-bottom: 1px solid $secondary-color;
+    background-color: $primary-color;
+    .container {
+        @include flex-display(flex, center, space-between);
+        .header-navbar {
+            @include flex-display(flex, center, space-between);
+            .navbar-logo {
+                h1 {
+                    color: $secondary-color;
+                    font-family: $primary-font;
+                    font-size: 3rem;
+                }
+            }
+            .navbar {
+                &-list {
+                    display: flex;
+                    padding: 3rem;
+                    li {
+                        a {
+                            font-size: 1.3rem;
+                            padding: 0.2rem;
+                            margin-right: 2rem;
+                            transition: all .5s;
+                            &:hover {
+                                color: $secondary-color;
+                                border-bottom: 1px solid $secondary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .header-login {
+            @include flex-display(flex, center, space-between);
+            .navbar-login {
+                a {
+                    font-size: 1.2rem;
+                    padding: 0.2rem;
+                    margin-left: 1rem;
+                }
+            }
+            .navbar-contact {
+                font-size: 2rem;
+                padding: 1rem;
+                margin-left: 3rem;
+                background-color: $secondary-color;
+                border-radius: 10px;
+                color: $primary-color;
+                font-style: initial;
+            }
+        }
+    }
+}
+
+main {
+    .container {
+        .main {
+            @include flex-display(flex, center, space-between);
+            text-align: center;
+            padding-left: 4rem;
+            margin-top: 10rem;
+            &-content {
+                text-align: left;
+                padding-right: 2rem;
+                h2 {
+                    font-size: 4rem;
+                }
+                p {
+                    font-size: 2rem;
+                    margin-top: 2rem;
+                    margin-left: 2.3rem;
+                }
+                .buton {
+                    button {
+                        border: none;
+                        color: $link-color;
+                        background-color: $secondary-color;
+                        font-size: 1rem;
+                        font-family: $primary-font;
+                        letter-spacing: 0.2rem;
+                        margin: 5rem;
+                        padding: 2rem;
+                        padding-right: 4rem;
+                        padding-left: 4rem;
+                        margin-top: 7rem;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            &-photo {
+                img {
+                    border-radius: 10%;
+                    max-width: 50rem;
+                    right: 0px;
+                }
+            }
+        }
+        .sponsor {
+            @include flex-display(flex, center, space-between);
+            margin-top: 2rem;
+            position: relative;
+            img {
+                width: 90%;
+            }
+            h4 {
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: $secondary-color;
+                font-size: 1.2rem;
+                border-bottom: 1px solid $primary-color;
+                width: 10rem;
+            }
+        }
+    }
+    &-photo {}
+}
+
+@import 'components';
